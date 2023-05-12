@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+li {
+  list-style: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background: url("images/bgc.png") no-repeat center center;
+  background-size: cover;
+}
+
+.AppContainer {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  /* height: 900px; */
+  position: relative;
+}
+
+/* .AppContainer::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 900px !important;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: url("images/wrap.png") no-repeat center center;
+  background-size: contain;
+  
+} */
+
+.AppContainer .content {
+  padding-top: 150px;
+}
+
+.AppContainer .content h1 {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.AppContainer .content .contentBox {
+  margin-top: 30px;
+}
+
+.AppContainer .content .contentBox .formBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.AppContainer .content .contentBox .formBox .ant-form-item-label img {
+  width: 25px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+
+.AppContainer .content .contentBox .formBox .ant-form-item-label span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.AppContainer .content .contentBox .right {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.AppContainer .content .contentBox .right .submit {
+  width: 100%;
+  height: 55px;
+  background-color: black;
+  color: #fff;
+  font-size: 25px;
+}
+
+.AppContainer .content .contentBox .right .ant-form-item {
+  margin-bottom: 29px;
+}
+
+.AppContainer .content .contentBox .right .ant-form-item .ant-input {
+  height: 50px;
+}
+
+.AppContainer .content .contentBox .left {
+  flex: 1;
+}
+
+.AppContainer .content .contentBox .left TextArea {
+  resize: none;
+  border-right: 8px solid;
+  border-image: linear-gradient(to bottom, #c982cd, #a09fea, #9df5fb) 1;
+}
+
+.form2Box {
+  flex-wrap: wrap;
+}
+
+.form2Box .ant-form-item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.form2Box .ant-form-item .ant-input {
+  height: 50px;
+}
+
+.bottom .titleComponent {
+  margin-top: 20px;
+}
+
+.bottom .titleComponent img {
+  width: 25px;
+  vertical-align: bottom;
+}
+
+.bottom .titleComponent span {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.bottom .ant-descriptions {
+  margin-top: 20px;
+}
+
+.bottom .blcBtn {
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 2px 15px;
+  height: auto;
 }

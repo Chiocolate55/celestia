@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background: url("images/bgc.png") no-repeat center center;
+  background-size: cover;
+}
+.AppContainer {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  // background: linear-gradient(to bottom, #875cf4, #d3b3e4, #ebfdfd, #ffffff);
+  position: relative;
+  // &::before {
+  //   content: '';
+  //   display: inline-block;
+  //   width: 100%;
+  // 	top: 0;
+  //  bottom: 0;
+  //   position: absolute;
+  //   background: url('images/wrap.png') no-repeat center center;
+  //   background-size: contain;
+  // }
+
+  .container-header {
+  }
+
+  .content {
+    padding-top: 150px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 65px;
+    }
+    .contentBox {
+      margin-top: 30px;
+
+      .formBox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .ant-form-item-label {
+          img {
+            width: 25px;
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+          span {
+            font-size: 20px;
+            font-weight: 700;
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        margin-left: 50px;
+        .submit {
+          width: 100%;
+          height: 55px;
+          background-color: black;
+          color: #fff;
+          font-size: 25px;
+        }
+        .ant-form-item {
+          margin-bottom: 29px;
+          .ant-input {
+            height: 50px;
+          }
+        }
+      }
+      .left {
+        flex: 1;
+        TextArea {
+          resize: none;
+          border-right: 8px solid;
+          border-image: linear-gradient(to bottom, #c982cd, #a09fea, #9df5fb) 1;
+        }
+      }
+    }
+  }
+}
+
+.form2Box {
+  flex-wrap: wrap;
+  .ant-form-item {
+    width: 40%;
+    margin-bottom: 30px;
+    .ant-input {
+      height: 50px;
+    }
+  }
+}
+
+.bottom {
+  .titleComponent {
+    margin-top: 20px;
+    img {
+      width: 25px;
+      vertical-align: bottom;
+    }
+    span {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+  .ant-descriptions {
+    margin-top: 20px;
+  }
+  .blcBtn {
+    background-color: black;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 2px 15px;
+    height: auto;
+  }
+}
+
+.header-logo {
+  cursor: pointer;
+}
+.status {
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+
+  &.active {
+    background: #94e34b;
+  }
+  &.error {
+    background: #ff0000;
+  }
+  &.offline {
+    background: #9e9e9e;
+  }
+}
+.node {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  padding-top: 24px;
+  font-weight: bold;
+  & div {
+    font-size: 24px;
+  }
+}
